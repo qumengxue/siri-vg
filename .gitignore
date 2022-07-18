@@ -1,3 +1,8 @@
+.vscode/
+exps/
+mdetr_annotations
+coco
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

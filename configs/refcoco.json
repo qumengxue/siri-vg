@@ -1,0 +1,10 @@
+{
+    "combine_datasets": ["refexp"],
+    "combine_datasets_val": ["refexp"],
+    "combine_datasets_test": ["val", "testA", "testB"],
+    "refexp_dataset_name": "refcoco",
+    "coco_path": "coco/",
+    "refexp_ann_path": "mdetr_annotations/",
+    "epochs": 30,
+    "lr_drop": 30
+}
