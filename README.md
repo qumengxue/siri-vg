@@ -55,7 +55,7 @@ For more installation details, please see the repository of [MDETR](https://gith
 Coming soon.
 ## **Citing SiRi**
 ```
-@inproceedings{yang2022lavt,
+@inproceedings{qu2022siri,
   title={SiRi: A Simple Selective Retraining Mechanism for Transformer-based Visual Grounding},
   author={Mengxue Qu and Yu Wu and Wu Liu and Gong Qiqi and Liang Xiaodan and Olga Russakovsky and Yao Zhao and Yunchao Wei},
   booktitle={ECCV},
