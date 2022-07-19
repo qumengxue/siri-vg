@@ -670,7 +670,7 @@ def main(args):
             if args.do_qa:
                 metric = test_stats["gqa_accuracy_answer_total_unscaled"]
             elif args.combine_datasets[0] == 'refexp':
-                metric = test_stats["refexp_refcoco+"][0]
+                metric = test_stats['refexp_' + args.refexp_dataset_name][0]
             else:
                 metric = np.mean([v[1] for k, v in test_stats.items() if "coco_eval_bbox" in k])
 
