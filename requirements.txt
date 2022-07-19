@@ -9,6 +9,6 @@ onnx
 onnxruntime
 prettytable
 submitit
-git+https://github.com/cocodataset/cocoapi.git#subdirectory=PythonAPI&egg=pycocotools
-git+https://github.com/cocodataset/panopticapi.git#egg=panopticapi
+pycocotools
+panopticapi
 timm
