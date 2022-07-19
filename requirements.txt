@@ -12,3 +12,4 @@ submitit
 pycocotools
 panopticapi
 timm
+opencv-python
