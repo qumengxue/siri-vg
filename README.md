@@ -36,7 +36,6 @@ we investigate a new training mechanism to improve the Transformer encoder, name
 For more installation details, please see the repository of [MDETR](https://github.com/ashkamath/mdetr), our code is built based on it.
 
 ## **Training**
-## Main experiment 
    - For example, if with 2 decoders and 8 retraining periods in RefCOCOg, run
      ```
      sh refcocog.sh
@@ -57,7 +56,7 @@ Coming soon.
 ```
 @inproceedings{qu2022siri,
   title={SiRi: A Simple Selective Retraining Mechanism for Transformer-based Visual Grounding},
-  author={Mengxue Qu and Yu Wu and Wu Liu and Gong Qiqi and Liang Xiaodan and Olga Russakovsky and Yao Zhao and Yunchao Wei},
+  author={Qu,Mengxue and Wu, Yu and Liu, Wu and Gong, Qiqi and Liang, Xiaodan and Olga, Russakovsky and Zhao, Yao and Wei, Yunchao},
   booktitle={ECCV},
   year={2022}
 }
