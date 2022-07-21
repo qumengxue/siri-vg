@@ -15,7 +15,7 @@ python -m torch.distributed.launch   --nproc_per_node=${GPU_NUM}  --use_env main
 # test
 python -m torch.distributed.launch  --nproc_per_node=${GPU_NUM}   --use_env main.py  --dataset_config ${DATASET}  --batch_size 16 \
 --output-dir ${EXP_DIR}_$(expr $i)/   --ema   --lr 5e-5   --lr_backbone 5e-5   --text_encoder_lr 1e-5  --num_queries 16  \
---no_contrastive_align_loss  --cascade_num ${CASCADE_NUM}  --resume ${EXP_DIR}/BEST_checkpoint.pth  --eval
+--no_contrastive_align_loss  --cascade_num ${CASCADE_NUM}  --resume ${EXP_DIR}_$(expr $i)/BEST_checkpoint.pth  --eval
 else
 python -m torch.distributed.launch   --nproc_per_node=${GPU_NUM}  --use_env main.py  --dataset_config ${DATASET}  --batch_size 16 \
 --output-dir ${EXP_DIR}_$(expr $i)/   --ema   --lr 5e-5   --lr_backbone 5e-5   --text_encoder_lr 1e-5  --num_queries 16  \
@@ -24,6 +24,6 @@ python -m torch.distributed.launch   --nproc_per_node=${GPU_NUM}  --use_env main
 
 python -m torch.distributed.launch  --nproc_per_node=${GPU_NUM}   --use_env main.py  --dataset_config ${DATASET}  --batch_size 16 \
 --output-dir ${EXP_DIR}_$(expr $i)/   --ema   --lr 5e-5   --lr_backbone 5e-5   --text_encoder_lr 1e-5  --num_queries 16  \
---no_contrastive_align_loss  --cascade_num ${CASCADE_NUM}  --resume ${EXP_DIR}/BEST_checkpoint.pth  --eval
+--no_contrastive_align_loss  --cascade_num ${CASCADE_NUM}  --resume ${EXP_DIR}_$(expr $i)/BEST_checkpoint.pth  --eval
 fi
 done
