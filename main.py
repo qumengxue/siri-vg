@@ -467,7 +467,7 @@ def main(args):
         else:
             if "model_ema" in checkpoint:
                 encoder_dict = {k: v for k, v in checkpoint["model_ema"].items() if 'transformer.0.encoder' in k}
-                model_without_ddp.load_state_dict(checkpoint["model_ema"], strict=False)
+                model_without_ddp.load_state_dict(encoder_dict, strict=False)
                 print('continue training encoder')
             else:
                 encoder_dict = {k: v for k, v in checkpoint["model"].items() if 'transformer.0.encoder' in k}
