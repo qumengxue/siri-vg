@@ -73,7 +73,7 @@ For more installation details, please see the repository of [MDETR](https://gith
 | MDETR\* +SiRi     | 76\.63   | 76\.46 |[gdrive](https://drive.google.com/file/d/1m-FnDZ48F44xUvdpHnjzCkkn5VsPgm2v/view?usp=sharing)       |
 | MDETR\* + MT SiRi | 77\.39   | 76\.80 |[gdrive](https://drive.google.com/file/d/1xEqdTnm5MQfabORr4X9lP9a9R1O8URRH/view?usp=sharing)       |
 
-**TASK1: Referring Expression Segmentation**
+**TASK2: Referring Expression Segmentation**
 
 Coming soon!
 
