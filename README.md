@@ -51,7 +51,32 @@ For more installation details, please see the repository of [MDETR](https://gith
       python -m torch.distributed.launch  --nproc_per_node=4  --use_env main.py  --dataset_config configs/refcocog.json  --batch_size 18 --output-dir exps/   --ema   --lr 5e-5   --lr_backbone 5e-5   --text_encoder_lr 1e-5  --num_queries 16  --no_contrastive_align_loss  --cascade_num 2  --resume exps/refcocog_1d.pth  --eval
       ```
 ## **Model Zoo**
-Coming soon.
+**TASK1: Referring Expression Comprehension**
+- **RefCOCO**
+
+| Model             | val     | testA  | testB  | model |
+|-------------------|---------|--------|--------|-------|
+| MDETR\* +SiRi     | 85\.83  | 88\.56 | 81\.27 |[gdrive](https://drive.google.com/file/d/1nReXmFXbWhzpklsDX5BieoOXhYOGN1WY/view?usp=sharing)     |
+| MDETR\* + MT SiRi | 85\.82  | 89\.11 | 81\.08 |[gdrive](https://drive.google.com/file/d/1LMvkQqoEMt_fRSOhaQf2zHMsaTE6mscF/view?usp=sharing)       |
+
+- **RefCOCO+**
+
+| Model             | val            | testA          | testB          | model |
+|-------------------|----------------|----------------|----------------|-------|
+| MDETR\* +SiRi     | 76\.68 (76.63) | 82\.01 (81.99) | 66\.33 (66.86) |[gdrive](https://drive.google.com/file/d/10XRIZXj4kZfhn5DprJ0clunhoa3xqXPF/view?usp=sharing)       |
+| MDETR\* + MT SiRi | 77\.47 (77.53) | 83\.04 (82.47) | 67\.11 (67.89) |[gdrive](https://drive.google.com/file/d/1ItHWyHYogxcE3sBwrjLDeF8b24lfuBbQ/view?usp=sharing)       |
+
+- **RefCOCOg**
+
+| Model             | val      | test   | model |
+|-------------------|----------|--------|-------|
+| MDETR\* +SiRi     | 76\.63   | 76\.46 |[gdrive](https://drive.google.com/file/d/1m-FnDZ48F44xUvdpHnjzCkkn5VsPgm2v/view?usp=sharing)       |
+| MDETR\* + MT SiRi | 77\.39   | 76\.80 |[gdrive](https://drive.google.com/file/d/1xEqdTnm5MQfabORr4X9lP9a9R1O8URRH/view?usp=sharing)       |
+
+**TASK1: Referring Expression Segmentation**
+
+Coming soon!
+
 ## **Citing SiRi**
 ```
 @inproceedings{qu2022siri,

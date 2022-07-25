@@ -285,10 +285,10 @@ def get_args_parser():
     parser.add_argument("--dist-url", default="env://", help="url used to set up distributed training")
 
     # cascade or not
-    parser.add_argument("--cascade_num", default=0, type=int)
+    parser.add_argument("--cascade_num", default=0, type=int, help="cascade_num=1 for SiRi, cascade_num=2 for MT SiRi")
 
     # freeze encoder or not
-    parser.add_argument("--freeze_encoder", default=False, action='store_true')
+    parser.add_argument("--freeze_encoder", default=False, action='store_true', help="if True, the encoder will only load trained encoder params in last stage not all params for continual train")
 
     return parser
 
