@@ -10,7 +10,7 @@ we investigate a new training mechanism to improve the Transformer encoder, name
 ![SiRi](.github/siri.png)
 
 # **Updates**
-   - **2022-7-20** Code of SiRi in MDETR-like model on task REC
+   - **2022-7-25** Code and model link of SiRi in MDETR-like model on task REC
    - We will update the code and models on TransVG and other VL tasks such as RES.
 # **Installation**
 ## Environment:
