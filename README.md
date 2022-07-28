@@ -1,7 +1,7 @@
 **SiRi**: A Simple Selective Retraining Mechanism for Transformer-based Visual Grounding
 ========
 
-This repository is an official PyTorch implementation of the ECCV 2022 paper [**SiRi: A Simple Selective Retraining Mechanism for Transformer-based Visual Grounding**](https://yu-wu.net/pdf/ECCV22_SiRi.pdf).
+This repository is an official PyTorch implementation of the ECCV 2022 paper [**SiRi: A Simple Selective Retraining Mechanism for Transformer-based Visual Grounding**](https://arxiv.org/abs/2207.13325).
 
 
 # **Introduction**
